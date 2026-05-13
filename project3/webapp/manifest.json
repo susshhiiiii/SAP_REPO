@@ -1,7 +1,7 @@
 {
   "_version": "1.84.0",
   "sap.app": {
-    "id": "demo.ageeligibilitycheckup",
+    "id": "demo.frag.project3",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
-      "version": "1.23.0",
-      "toolsId": "403b40f7-7388-4573-aefa-d02ed9e84b46"
+      "version": "1.24.0",
+      "toolsId": "a0f78970-2eab-4763-b48b-77889199fa67"
     }
   },
   "sap.ui": {
@@ -49,7 +49,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "demo.ageeligibilitycheckup.i18n.i18n"
+          "bundleName": "demo.frag.project3.i18n.i18n"
         }
       }
     },
@@ -68,9 +68,9 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "demo.ageeligibilitycheckup.view",
+        "path": "demo.frag.project3.view",
         "async": true,
-        "viewPath": "demo.ageeligibilitycheckup.view"
+        "viewPath": "demo.frag.project3.view"
       },
       "routes": [
         {
@@ -89,7 +89,7 @@
       }
     },
     "rootView": {
-      "viewName": "demo.ageeligibilitycheckup.view.App12",
+      "viewName": "demo.frag.project3.view.App",
       "type": "XML",
       "id": "App",
       "async": true
