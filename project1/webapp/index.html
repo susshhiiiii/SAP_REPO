@@ -1,0 +1,51 @@
+
+<!--Declare HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--To Display text and characters-->
+    <!--Declaration of display on laptop and mobile device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Display your webpage on the browser-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Title of webpage-->
+    <title>App Title</title>
+    <!--Declare UI Layout-->
+    <style>
+        html, body, body > div, #container, #container-uiarea {
+            height: 100%;
+        }
+    </style>
+    <!--id="sap-ui-bootstrap"= Loads UI5 Framework-->
+    <!--src="resources/sap-ui-core.js" = Link to download SAP UI libs and Packages-->
+    <!--data-sap-ui-theme="sap_horizon" = Standard theme given by SAP for UI design for fonts,layouts ,containers, web components-->
+    <!--data-sap-ui-resource-roots='{
+            "demo.project1": "./"
+        }' = Fetch root directory code and searching of custom code in the directory-->
+    <!--data-sap-ui-on-init="module:sap/ui/core/ComponentSupport" =  Initialize all components-->
+    <!--data-sap-ui-async="true" = allow parallel task-->
+    <!--data-sap-ui-frame-options="trusted" = SAP Trusted applications only rendered not any 3rd party -->
+        <script    
+        id="sap-ui-bootstrap"
+        src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_horizon"
+        data-sap-ui-resource-roots='{
+            "demo.project1": "./"
+        }'
+        
+        data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
+        data-sap-ui-compat-version="edge"
+        data-sap-ui-async="true"
+        data-sap-ui-frame-options="trusted"
+    ></script>
+</head>
+<body class="sapUiBody sapUiSizeCompact" id="content">
+    <div
+        data-sap-ui-component
+        data-name="demo.project1"
+        data-id="container"
+        data-settings='{"id" : "demo.project1"}'
+        data-handle-validation="true"
+    ></div>
+</body>
+</html>

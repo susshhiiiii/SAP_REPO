@@ -1,0 +1,68 @@
+<mvc:View 
+    controllerName="demo.form.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <App>
+
+        <pages>
+
+            <Page title="Registration Form">
+
+                <content>
+
+                    <f:SimpleForm
+                        layout="ColumnLayout"
+                        editable="true">
+
+                        <f:content>
+
+                            <core:Title text="Registration Form"/>
+
+                            <Label text="Name" required="true"/>        
+                            <Input placeholder="Enter your name" id="name" change="onNameChange"/>
+
+                            <Label text="Surname" required="true"/>        
+                            <Input id="surname" placeholder="Enter your Surname" change="onNameChange"/>
+
+                            <Label text="Mobile Number" required="true"/>        
+                            <Input id="mobile" placeholder="Enter your Mobile" change="onNameChange"/>
+
+                            <Label text="Email" required="true"/>        
+                            <Input placeholder="Enter your email" id="email" change="onNameChange"/>
+
+                            <Label text="Address"/>        
+                            <TextArea placeholder="Enter your address"/>
+
+                            <Label text="Gender" />
+
+                            <Select>
+                                <core:Item key="" text="Select Gender" />
+                                <core:Item key="male" text="Male" />
+                                <core:Item key="female" text="Female" />
+                                <core:Item key="other" text="Other" />
+                            </Select>
+
+                            <Label text="Country"/>        
+                            <Input placeholder="Enter your Country"/>
+
+                            <Button
+                                text="Submit"
+                                type="Emphasized"
+                                press="onSubmit"/>
+
+                        </f:content>
+
+                    </f:SimpleForm>
+
+                </content>
+
+            </Page>
+
+        </pages>
+
+    </App>
+
+</mvc:View>
